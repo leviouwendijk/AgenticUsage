@@ -1,0 +1,51 @@
+{
+  "originHash" : "af81a40dbe44eeb366ea348f0a5b76e3d1fe8fd1785ee8ce88e2ad0c564ca708",
+  "pins" : [
+    {
+      "identity" : "agentic",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/leviouwendijk/Agentic.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "d26ac0dacef4e59800e9d21a755cb4d0e63889db"
+      }
+    },
+    {
+      "identity" : "guidelines",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/leviouwendijk/Guidelines.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "a39e1130e31588a1f21dc24aeeb8fb0a1357c7f1"
+      }
+    },
+    {
+      "identity" : "position",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/leviouwendijk/Position.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "c80214283130c1bd4fc1c54dd5f3c574e3e4986c"
+      }
+    },
+    {
+      "identity" : "primitives",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/leviouwendijk/Primitives.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "7992ebc66ba098758e574befc1b869978b38e82c"
+      }
+    },
+    {
+      "identity" : "tokens",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/leviouwendijk/Tokens.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "4e6c16afcaa81606fa7b2dcd80f9a25965403687"
+      }
+    }
+  ],
+  "version" : 3
+}

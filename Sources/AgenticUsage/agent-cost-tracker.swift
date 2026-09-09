@@ -42,9 +42,7 @@ public struct AgentCostTracker: Sendable {
         sessionID: String,
         turnIndex: Int
     ) -> AgentCostRecord {
-        let model = resolvedModel(
-            for: request
-        )
+        let model = resolvedModel()
 
         let projection: AgentCostProjection
         if let model {
@@ -72,7 +70,7 @@ public struct AgentCostTracker: Sendable {
                     options: estimationOptions,
                     reservedOutputTokens: reservedOutputTokens
                 ),
-                reason: "No model was available on the request or cost tracker.",
+                reason: "No default model was configured on the cost tracker.",
                 metadata: mergedMetadata(
                     [
                         "phase": "projected",
@@ -121,9 +119,7 @@ public struct AgentCostTracker: Sendable {
             return existing
         }
 
-        let model = resolvedModel(
-            for: request
-        )
+        let model = resolvedModel()
 
         let actual: AgentCostProjection
         if let model {
@@ -143,7 +139,7 @@ public struct AgentCostTracker: Sendable {
         } else {
             actual = AgentCostCalculator.unavailable(
                 usage: usage.costUsage,
-                reason: "No model was available on the request or cost tracker.",
+                reason: "No default model was configured on the cost tracker.",
                 metadata: mergedMetadata(
                     [
                         "phase": "actual",
@@ -182,12 +178,10 @@ public struct AgentCostTracker: Sendable {
 }
 
 private extension AgentCostTracker {
-    func resolvedModel(
-        for request: AgentRequest
-    ) -> String? {
+    func resolvedModel() -> String? {
         Self.normalized(
-            request.model
-        ) ?? defaultModel
+            defaultModel
+        )
     }
 
     func mergedMetadata(

@@ -7,7 +7,16 @@
       "location" : "https://github.com/leviouwendijk/Agentic.git",
       "state" : {
         "branch" : "master",
-        "revision" : "d26ac0dacef4e59800e9d21a755cb4d0e63889db"
+        "revision" : "b4271a89701c5bf2b8f96d1c64497c9ec20c3864"
+      }
+    },
+    {
+      "identity" : "dsl",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/leviouwendijk/DSL.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "30ec6798f883b91f697d060bb001e0e4f7a09225"
       }
     },
     {
@@ -16,7 +25,7 @@
       "location" : "https://github.com/leviouwendijk/Guidelines.git",
       "state" : {
         "branch" : "master",
-        "revision" : "a39e1130e31588a1f21dc24aeeb8fb0a1357c7f1"
+        "revision" : "0a5bd3f30af7eaeb79c0ac37007f10322920f95a"
       }
     },
     {
@@ -25,7 +34,7 @@
       "location" : "https://github.com/leviouwendijk/Position.git",
       "state" : {
         "branch" : "master",
-        "revision" : "c80214283130c1bd4fc1c54dd5f3c574e3e4986c"
+        "revision" : "66a8219a6780a6346e55c9531f8fabaa4ff713d9"
       }
     },
     {
@@ -34,7 +43,16 @@
       "location" : "https://github.com/leviouwendijk/Primitives.git",
       "state" : {
         "branch" : "master",
-        "revision" : "7992ebc66ba098758e574befc1b869978b38e82c"
+        "revision" : "e626fa0746aee024729bf56549e774d13aa17099"
+      }
+    },
+    {
+      "identity" : "schema",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/leviouwendijk/Schema.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "f23bd9c256f0d7b428c30db68bcd097a3a19c63a"
       }
     },
     {
